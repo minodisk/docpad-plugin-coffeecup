@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-coffeecup",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "DocPad plugin that adds the ability to render coffee to html with coffeecup.",
   "homepage": "https://github.com/minodisk/docpad-plugin-coffeecup",
   "keywords": [
