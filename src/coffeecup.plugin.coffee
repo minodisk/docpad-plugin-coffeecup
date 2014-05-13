@@ -16,8 +16,8 @@ module.exports = (BasePlugin) ->
 
     render: (opts, next)->
       { inExtension, outExtension } = opts
-      console.log inExtension, outExtension
-      unless inExtension is 'coffee' and outExtension is 'html'
+      unless inExtension is [ 'coffee', 'litcoffee' ] and
+             outExtension in [ 'html' ]
         next()
         return
       try
