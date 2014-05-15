@@ -1,5 +1,3 @@
-coffeecup = require 'coffeecup'
-
 module.exports = (BasePlugin) ->
 
   class CoffeeCupPlugin extends BasePlugin
@@ -21,6 +19,7 @@ module.exports = (BasePlugin) ->
         next()
         return
       try
+        coffeecup = require 'coffeecup'
         opts.content = coffeecup.render opts.content, opts.templateData, @config.coffeecup
         next()
       catch err
